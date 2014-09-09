@@ -3,16 +3,12 @@
    <head>
       <title>To Do App</title>
    </head>
-   <body ng-app ng-controller='list'>
-      <h1>{{title}}</h1>
+   <body ng-app='todo' ng-controller='list'>
+      <new-item></new-item>
+      
+      <items></items>
 
-      <input type='text' ng-model='text' /><button ng-click="add()">Add New</button>
-
-      <div ng-repeat='item in items | orderBy:"score"'>
-         <p><select ng-model='item.score' ng-options="score for score in scores"></select>{{item.score}} - {{item.body}}<input type='checkbox' ng-model='item.done'></p>
-      </div>
-
-      <button ng-click='remove()'>Remove</button>
+      <remove-item></remove-item>
         
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
       <script src='todo.js'></script>

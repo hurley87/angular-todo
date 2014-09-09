@@ -1,0 +1,3 @@
+<div ng-repeat='item in items | orderBy:"score"'>
+ 	<p><select ng-model='item.score' ng-options="score for score in scores"></select>{{item.body}}<input type='checkbox' ng-model='item.done'></p>
+</div>
