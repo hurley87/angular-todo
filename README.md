@@ -3,14 +3,9 @@ angular-todo
 
 This is a simple Todo List I created in Angular(surprise!) which shows off some cool framework features. 
 
--The html used: 
-  <new-item></new-item>
-      
-  <items></items>
+Look at that HTML! 
 
-  <remove-item></remove-item>
- 
- Obviously there's more but this demonstrates a reason why Angular is so awesome - custom directives. This allows my html to be more expressive. 
+This demonstrates a reason why Angular is so awesome - custom directives. This allows my html to be more expressive. 
  
  I filter each item based on score. Users can rank each item. 
  
