@@ -1,3 +1,13 @@
-<div ng-repeat='item in items | orderBy:"score"'>
+<div ng-class='{even: !$even, odd: !$odd}' ng-repeat='item in items | orderBy:"score"'>
  	<p><select ng-model='item.score' ng-options="score for score in scores"></select>{{item.body}}<input type='checkbox' ng-model='item.done'></p>
 </div>
+
+<style type="text/css">
+	.even {
+		color: red;
+	}
+
+	.odd {
+		color: blue;
+	}
+</style>
