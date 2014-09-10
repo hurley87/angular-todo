@@ -1,1 +1,27 @@
 <button ng-click='remove()'>Remove Checked Items</button>
+<p>{{items.length}}</p>
+<div ng-class='{green: items.length <=3, yellow: items.length > 3 && items.length <= 5, red: items.length > 5 }'>
+	
+</div>
+
+<style type="text/css">
+		.green {
+				background-color: green;
+				height: 20px;
+				width: 20px;
+		}
+
+		.yellow {
+			background-color: yellow;
+			height: 40px;
+			width: 40px;
+		}
+
+		.red{
+			background-color: red;
+			height: 60px;
+			width: 60px;
+		}
+
+
+</style>

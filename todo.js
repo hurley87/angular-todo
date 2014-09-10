@@ -19,6 +19,10 @@ app.controller('list', ['$scope', function($scope) {
     }
     $scope.items = new_list;
   }; 
+
+  $scope.generateNumber = function() {
+    return Math.floor((Math.random()*10)+1);
+  };
 }]);
 
 
